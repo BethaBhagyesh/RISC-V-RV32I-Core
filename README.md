@@ -1,17 +1,20 @@
 # RISC-V RV32I CPU Core
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Language](https://img.shields.io/badge/HDL-TL--Verilog-green.svg)
-![ISA](https://img.shields.io/badge/ISA-RISC--V%20RV32I-orange.svg)
-![Status](https://img.shields.io/badge/Status-Verified-brightgreen.svg)
-![Platform](https://img.shields.io/badge/Platform-Makerchip-purple.svg)
+
+![License](https://img.shields.io/badge/License-MIT-blue.svg) ![Language](https://img.shields.io/badge/HDL-TL--Verilog-green.svg) ![ISA](https://img.shields.io/badge/ISA-RISC--V%20RV32I-orange.svg) ![Status](https://img.shields.io/badge/Status-Verified-brightgreen.svg) ![Platform](https://img.shields.io/badge/Platform-Makerchip-purple.svg)
 
 A 32-bit RISC-V RV32I processor core implemented in Transaction-Level Verilog (TL-Verilog). This implementation supports the complete RV32I instruction set and demonstrates fundamental processor design concepts through a single-cycle architecture.
 
 ## Architecture Overview
 
+> **Here's a pre-built logic diagram of the final CPU. [Ctrl-click here to explore in its own tab.](CPU_Circuit_Diagram.png)**
+
 ![Complete Circuit Diagram](CPU_Circuit_Diagram.png)
 
+> **This image provides a high-level visualization of the CPU as seen in simulation. [Ctrl-click here to view separately.](visualization.png)**
+
 ![CPU Visualization](visualization.png)
+
+> **The architecture's block diagram breaks down all major functional units. [Ctrl-click here to explore the block diagram independently.](CPU_Block_Diagram.svg)**
 
 ![Block Diagram](CPU_Block_Diagram.svg)
 
@@ -43,7 +46,3 @@ The processor implements a Harvard architecture with separate instruction and da
 ## Instruction Set Support
 
 ### Instruction Format Implementation
-
-*[INSERT: RISC-V Instruction Formats - Image 6]*
-
-*[INSERT: Instruction Decoding Tables - Image 4]*

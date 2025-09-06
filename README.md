@@ -27,7 +27,7 @@ The processor implements a Harvard architecture with separate instruction and da
    Visit: https://makerchip.com
 
 2. Load design file
-   Copy contents of src/risc-v-cpu.tlv
+   Copy contents of RV32I_Code.tlv
 
 3. Compile and simulate
    Click "Compile" → "Simulate" → View results in VIZ tab
@@ -168,8 +168,6 @@ $dmem1_wr_data[31:0] = $src2_value[31:0];
 $dmem1_rd_en = $is_load;
 ```
 
-## Verification and Testing
-
 ### Test Methodology
 The core verification uses a comprehensive test program that exercises all implemented instructions and validates processor functionality.
 
@@ -185,16 +183,17 @@ passed = >>2$passed_cond;
 failed = *cyc_cnt > 70;
 ```
 
-### Verification Results
+### Waveforms
 
-*[INSERT: Simulation Waveforms - Image 3]*
+<img width="1740" height="832" alt="Screenshot 2025-09-06 232110" src="https://github.com/user-attachments/assets/afb6b470-13a7-4603-8ac2-a5e41ac5a659" />
+
 
 **Test Outcomes:**
-- ✅ **PASSED**: Register x30 contains expected value (0x1)
-- ✅ **Program Counter**: Stable at completion
-- ✅ **Register File**: All test registers verified  
-- ✅ **Memory Operations**: Load/store functionality confirmed
-- ✅ **Instruction Execution**: Complete RV32I instruction set tested
+-  **PASSED**: Register x30 contains expected value (0x1)
+-  **Program Counter**: Stable at completion
+-  **Register File**: All test registers verified  
+-  **Memory Operations**: Load/store functionality confirmed
+-  **Instruction Execution**: Complete RV32I instruction set tested
 
 ### Test Coverage
 | Component | Coverage |
@@ -211,35 +210,12 @@ failed = *cyc_cnt > 70;
 ### Makerchip Platform
 1. Navigate to [Makerchip.com](https://makerchip.com)
 2. Create new TL-Verilog project
-3. Copy content from `src/risc-v-cpu.tlv`
+3. Copy content from `RV32I_Code.tlv`
 4. Compile and simulate
 5. View results in VIZ tab
 
-*[INSERT: Complete TL-Verilog Source Code - src/risc-v-cpu.tlv]*
+![Complete Code](RV32I_Code.tlv)
 
-### Local Simulation (Future Enhancement)
-```bash
-# Requires SandPiper-SaaS installation
-sandpiper-saas -i src/risc-v-cpu.tlv -o risc-v-cpu.v --bestsv
-iverilog risc-v-cpu.v tb.v -o sim
-./sim
-```
-
-## File Organization
-
-```
-risc-v-cpu-core/
-├── src/
-│   └── risc-v-cpu.tlv          # Complete TL-Verilog implementation
-├── docs/
-│   ├── waveforms/              # Simulation timing diagrams  
-│   ├── architecture-diagrams/   # Circuit and block diagrams
-│   └── instruction-formats.png  # RISC-V ISA reference
-├── verification/
-│   └── test-results.md         # Detailed verification report
-├── LICENSE
-└── README.md
-```
 
 ## Design Characteristics
 
@@ -290,10 +266,6 @@ This implementation demonstrates:
 4. Push to branch (`git push origin feature/enhancement`)
 5. Open Pull Request
 
-## License
-
-This project is licensed under the MIT License - see [LICENSE](LICENSE) file for details.
-
 ## References
 
 - [RISC-V ISA Specification v2.2](https://riscv.org/technical/specifications/)
@@ -302,5 +274,3 @@ This project is licensed under the MIT License - see [LICENSE](LICENSE) file for
 - [Makerchip Platform Documentation](https://makerchip.com/sandbox/)
 
 ---
-
-*This implementation serves as a reference design for educational purposes and demonstrates fundamental processor architecture concepts using modern hardware descrip

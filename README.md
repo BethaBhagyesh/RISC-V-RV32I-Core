@@ -6,11 +6,11 @@ A 32-bit RISC-V RV32I processor core implemented in Transaction-Level Verilog (T
 
 ## Architecture Overview
 
-> **Here's a pre-built logic diagram of the final CPU. [Ctrl-click here to explore in its own tab.](CPU_Circuit_Diagram.png)**
+> **Here's a pre-built logic diagram of the final CPU.**
 
 ![Complete Circuit Diagram](CPU_Circuit_Diagram.png)
 
-> **This image provides a high-level visualization of the CPU as seen in simulation. [Ctrl-click here to view separately.](visualization.png)**
+> **This image provides a high-level visualization of the CPU as seen in simulation.**
 
 ![CPU Visualization](visualization.png)
 

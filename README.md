@@ -14,7 +14,7 @@ A 32-bit RISC-V RV32I processor core implemented in Transaction-Level Verilog (T
 
 ![CPU Visualization](visualization.png)
 
-**The architecture's block diagram breaks down all major functional units. [Ctrl-click here to explore the block diagram independently.](CPU_Block_Diagram.svg)**
+**The architecture's block diagram breaks down all major functional units. [Ctrl-click here to explore in it's own tab.](CPU_Block_Diagram.svg)**
 
 ![Block Diagram](CPU_Block_Diagram.svg)
 

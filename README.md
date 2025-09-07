@@ -47,9 +47,10 @@ The processor implements a Harvard architecture with separate instruction and da
 ## Instruction Set Support
 
 ### Instruction Format Implementation
-*[INSERT: RISC-V Instruction Formats - Image 6]*
 
-*[INSERT: Instruction Decoding Tables - Image 4]*
+<img width="876" height="623" alt="image" src="https://github.com/user-attachments/assets/1e8d0d9f-ff63-411e-bba8-470a8098daaf" />
+
+
 
 The core supports all six RISC-V instruction formats with the following operations:
 

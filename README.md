@@ -2,7 +2,7 @@
 
 ![Language](https://img.shields.io/badge/HDL-TL--Verilog-green.svg) ![ISA](https://img.shields.io/badge/ISA-RISC--V%20RV32I-orange.svg) ![Status](https://img.shields.io/badge/Status-Verified-brightgreen.svg) ![Platform](https://img.shields.io/badge/Platform-Makerchip-purple.svg)
 
-A 32-bit RISC-V RV32I processor core implemented in Transaction-Level Verilog (TL-Verilog). This implementation supports the complete RV32I instruction set and demonstrates fundamental processor design concepts through a single-cycle architecture.
+A 32-bit RISC-V RV32I CPU core implemented in Transaction-Level Verilog (TL-Verilog). This implementation supports the complete RV32I instruction set and demonstrates fundamental processor design concepts through a single-cycle architecture.
 
 ## Architecture Overview
 
